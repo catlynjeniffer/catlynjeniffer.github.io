@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card</title>
+  <style>
+    * {
+      margin: 0;
+      padding:0;
+    }
+
+    .container {
+      width: 1200px;
+      height: 100vh;
+      margin: auto;
+    }
+
+    .box {
+      width: 358px; height: 200px;
+      border-radius: 16px;
+      margin: 10px; padding: 10px;
+      font-size: 20px; font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      background-color: lightblue;
+      float: left;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    
+    .box:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+    img {
+      padding-top: 10px;
+    }
+
+  </style>
+  <script>
+    var barang = ['<p>Charger</p><img src="images/charger.png" width="160" height="160">', 
+    '<p>Laptop</p><img src="images/laptop.png" width="170" height="170">', 
+    '<p>Smartphone</p><img src="images/phone.png" width="170" height="160">', 
+    '<p>mouse</p><img src="images/mouse.png" width="110" height="150">', 
+    '<p>Book</p><img src="images/book.png" width="160" height="160">', 
+    '<p>Pencil</p><img src="images/pencil.png" width="160" height="160">', 
+    '<p>Eraser</p><img src="images/eraser.png" width="140" height="140">', 
+    '<p>Drink</p><img src="images/drink.png" width="160 height="160">', 
+    '<p>Chair</p><img src="images/chair.png" width="140" height="140">'];
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div id="card"></div>
+  </div>
+</body>
+</html>
+<script>
+  var abc = '';
+  for (var i = 0; i < barang.length; i++) {
+    abc = abc + '<div class="box">' + barang[i] + '</div>';
+  }
+
+  document.querySelector('#card').innerHTML = abc;
+
+</script>
