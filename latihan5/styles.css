@@ -1,0 +1,92 @@
+* {
+    margin: 0; padding: 0;
+}
+
+.container {
+  width: 900px;
+  height: 800px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+  .tab {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .tab2 {
+    display: inline-block;
+    margin-left: 56px;
+  }
+
+  #larger {
+    font-size: 24px;
+  }
+
+  #smaller {
+    font-size: 18px;
+  }
+
+  #smaller2 {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .box {
+    float: right;
+    width: 360px; height: 350px;
+    padding-top: 50px;
+    padding-right: 150px;
+  }
+
+  .box2 {
+    float: right;
+    width: 140px; height: 200px;
+    padding-top: 50px;
+    padding-right: 40px;
+    padding-left: 10px;
+  }
+
+  .column {
+    float: left;
+    width: 380px;
+    height: 470px;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+  img {
+    padding-top: 50px;
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+
+  .tombol1, .tombol2, .tombol3 {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 20px; padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 25px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    width: 300px;
+    background-color:rgb(238, 238, 238);
+  }
+  
+  .tombol1:hover, .tombol2:hover, .tombol3:hover {
+    background-color: rgba(213, 213, 213, 0.671) !important;
+    cursor: pointer;
+  }
+
+  .content {
+    display: none;
+    padding-top: 20px;
+    height: 540px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+#about {background-color: rgb(244, 238, 255);}
+#experience {background-color: rgb(220, 214, 247);}
+#interest {background-color: rgb(166, 177, 225);}
